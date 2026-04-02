@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanshdeep | Aesthetic Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700&family=Playfair+Display:italic,wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS Variables for easy customization */
+        :root {
+            --bg-color: #faf9f6; /* Off-white/Cream */
+            --text-main: #2d2d2d;
+            --accent: #8e9775;    /* Sage Green */
+            --muted: #a0a0a0;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.6;
+            transition: all 0.3s ease;
+        }
+
+        /* Header / Logo Section */
+        header {
+            padding: 80px 20px 40px;
+            text-align: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-style: italic;
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            margin-top: 20px;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-main);
+            margin: 0 15px;
+            opacity: 0.6;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover { opacity: 1; }
+
+        /* Blog Grid */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .post-card {
+            background: var(--card-bg);
+            margin-bottom: 60px;
+            padding: 40px;
+            border-radius: 2px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+            transition: transform 0.3s ease;
+        }
+
+        .post-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .post-meta {
+            font-size: 0.75rem;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .post-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .post-excerpt {
+            color: #555;
+            font-weight: 300;
+            margin-bottom: 25px;
+        }
+
+        .read-more {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 0.9rem;
+            border-bottom: 1px solid transparent;
+            transition: border 0.3s;
+        }
+
+        .read-more:hover {
+            border-bottom: 1px solid var(--accent);
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            font-size: 0.8rem;
+            color: var(--muted);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .logo { font-size: 2rem; }
+            .post-card { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Vanshdeep</div>
+        <nav>
+            <a href="#">Stories</a>
+            <a href="#">Gallery</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <article class="post-card">
+            <div class="post-meta">October 24, 2023 • Lifestyle</div>
+            <h2 class="post-title">The Art of Finding Stillness in a Loud World</h2>
+            <p class="post-excerpt">In the hustle of modern life, we often forget to listen to the silence. Today, I'm exploring how a morning ritual changed my perspective on productivity...</p>
+            <a href="#" class="read-more">Read Story →</a>
+        </article>
+
+        <article class="post-card">
+            <div class="post-meta">October 20, 2023 • Travel</div>
+            <h2 class="post-title">Morning Light in the Mountains</h2>
+            <p class="post-excerpt">There is a specific golden hue that only hits the peaks at 5:45 AM. It makes everything feel possible, even if just for a fleeting moment...</p>
+            <a href="#" class="read-more">Read Story →</a>
+        </article>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Vanshdeep. Curated with intention.</p>
+    </footer>
+
+</body>
+</html>
